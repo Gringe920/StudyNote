@@ -1,7 +1,7 @@
 # My daily summary
-Notes to what I everyday had read article and feelings
+Notes about my daily reading and feelings.
 
-## 2016 [oct.]
+## [Oct,2016](oct/)
 
 ### 2016-10-31
 * 模块化的定义 理解js的模块化
