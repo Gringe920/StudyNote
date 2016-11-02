@@ -7,7 +7,7 @@ Notes about my daily reading and feelings.
 * 模块化的定义 理解js的模块化 [module](oct/31st/module.md)
 
 ### 2016-11-01
-* webpack-demo 
-
-
+* webpack-demo
+### 2016-11-02
+* webpack-demo-log  
 
