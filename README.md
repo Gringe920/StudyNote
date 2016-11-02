@@ -8,6 +8,7 @@ Notes about my daily reading and feelings.
 
 ### 2016-11-01
 * webpack-demo
+
 ### 2016-11-02
 * webpack-demo-log  
 
