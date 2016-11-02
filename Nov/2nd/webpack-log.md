@@ -1,5 +1,6 @@
+###Q&A
 
-一开始使用 `$ npm install webpack -g` 把 Webpack 已经安装到了全局环境下
+* 一开始使用 `$ npm install webpack -g` 把 Webpack 已经安装到了全局环境下
 打`webpack`命令
 但出现了以下错误
 ```
@@ -29,4 +30,20 @@ Error: Cannot find module 'webpack/lib/node/NodeTemplatePlugin'
 
 原因是因为Webpack没有安装到项目的依赖中
 使用`$ npm install webpack --save-dev`就搞定了
+
+
+
+
+* 使用`npm install sass-loader --save-dev`，增加scss文件，`npm start`但是出现了一下错误
+```
+ERROR in Cannot find module 'node-sass'
+ @ ./app/main.scss 4:14-115 13:2-17:4 14:20-121
+```
+原因是缺少了'node-sass'
+使用`npm i node-sass —save-dev`就搞定了
+
+
+
+
+
 
