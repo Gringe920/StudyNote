@@ -32,6 +32,12 @@ Error: Cannot find module 'webpack/lib/node/NodeTemplatePlugin'
 使用`$ npm install webpack --save-dev`就搞定了
 
 
+```
+//全局安装
+npm install -g webpack
+//安装到你的项目目录
+npm install --save-dev webpack
+```
 
 
 * 使用`npm install sass-loader --save-dev`，增加scss文件，`npm start`但是出现了一下错误
@@ -41,6 +47,10 @@ ERROR in Cannot find module 'node-sass'
 ```
 原因是缺少了'node-sass'
 使用`npm i node-sass —save-dev`就搞定了
+
+
+
+
 
 
 
