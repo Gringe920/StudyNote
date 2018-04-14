@@ -9,7 +9,7 @@ Html部分：
 </div>
 ```
 Css3部分：
-```css3
+```css
 .spinner {
   margin: 100px auto 0;
   width: 150px;

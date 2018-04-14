@@ -1,4 +1,4 @@
-##请描述一下cookies，sessionStorage和localStorage的区别？
+## 请描述一下cookies，sessionStorage和localStorage的区别？
 
 `localStorage`自从工作以来，用过最多的就是`localStorage`，以`key-value`的形式存储在浏览器中，要手动清除浏览器的缓存才能再次拿到想要的`key-value`。嵌入在app里面的页面，安卓则需要删除设置-应用里面的存储数据，ios则需要卸载app，重新安装。实际操作的例子有用户首次进来某个页面，展示所需的业务;手机号码输入，二次输入手动储存等。
 
@@ -16,7 +16,7 @@ box-model include margin,border,padding,content.
 `box-sizing`:用于更改用于计算元素宽度和高度的默认CSS框模型。 可以使用此属性来模拟不正确支持CSS框模型规范的浏览器的行为。
 
 
-##BFC(Block Formatting Context)是什么？有哪些应用？
+## BFC(Block Formatting Context)是什么？有哪些应用？
 `Web`页面中盒模型布局的`CSS`渲染模式
 应用：如`overflow: scroll, overflow: hidden, display: flex, float: left`,或者 `display: table`来创建。
 1. 防止外边距折叠，两个块级元素会有边距折叠，只要它们两个不在同个`BEC`模式里面就ok了。
@@ -24,7 +24,7 @@ box-model include margin,border,padding,content.
 3. 防止文字围绕
 4. 多列布局
 
-##一个元素若宽高已知，如何实现水平、垂直均相对于父元素居中？若这个元素高度未知呢？
+## 一个元素若宽高已知，如何实现水平、垂直均相对于父元素居中？若这个元素高度未知呢？
 
 ```css
 .parent{
@@ -46,7 +46,7 @@ $('.children').css({
 /*以上实现了上下居中，很麻烦很不好。*/
 ```
 
-##请优化下段代码：
+## 请优化下段代码：
 ```javascript
 for (var i = 0; i < document.getElementsByTagName('a').length; i++) {
      document.getElementsByTagName('a')[i].onmouseover = function () {

@@ -16,9 +16,7 @@ this的使用
 	}
 	
 	let fn = function(_this){
-		$(_this).css....  //这样方可拿到传递过来的元素
-		_this.css...... //错误示例
+		$(_this).css() //这样方可拿到传递过来的元素
+		_this.css() //错误示例
 	}
-
-
 ```

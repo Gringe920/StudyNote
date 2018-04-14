@@ -1,4 +1,4 @@
-##webpack知识点总结
+## webpack知识点总结
 
 ### webpack的作用
 webpack的作用是：模块化js打包、es6/ts等语言的重新编译、css预处理器编译，转化为合适的格式供浏览器使用。

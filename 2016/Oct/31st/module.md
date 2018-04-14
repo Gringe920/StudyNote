@@ -1,17 +1,17 @@
-#Notes on [learn-module](https://zhuanlan.zhihu.com/p/22890374)
+# Notes on [learn-module](https://zhuanlan.zhihu.com/p/22890374)
 
-##模块化的作用
+## 模块化的作用
 
 * 可维护性
 * 命名空间
 * 可复用性
 
-##引入模块的方式
->模块模式一般用来模拟类的概念（因为原生JavaScript并不支持类，虽然最新的ES6里引入了Class不过还不普及）这样我们就能把公有和私有方法还有变量存储在一个对象中——这就和我们在Java或Python里使用类的感觉一样。这样我们就能在公开调用API的同时，仍然在一个闭包范围内封装私有变量和方法。
+## 引入模块的方式
+> 模块模式一般用来模拟类的概念（因为原生JavaScript并不支持类，虽然最新的ES6里引入了Class不过还不普及）这样我们就能把公有和私有方法还有变量存储在一个对象中——这就和我们在Java或Python里使用类的感觉一样。这样我们就能在公开调用API的同时，仍然在一个闭包范围内封装私有变量和方法。
 
 ### 匿名闭包函数方式
-```
 
+```js
 (function(){
 	//在函数的作用域中下面的变量是私有的
 	var myarray = [12,13,23,4,6];
@@ -42,14 +42,13 @@
 
 `every()` 方法测试数组的所有元素是否都通过了指定函数的测试。
 
->#####立即执行函数（IIFE)
+> ##### 立即执行函数（IIFE)
 以关键词function开头的语句总是会被解释成函数声明（JS中不允许没有命名的函数声明），而加上括号后，内部的代码就会被识别为函数表达式
 
 
-###全局引入方式
+### 全局引入方式
 
-```
-
+```js
 (function (globalVariable) {
 
   // 在函数的作用域中下面的变量是私有的
@@ -110,9 +109,9 @@
 
 ```
 
-###对象接口
+### 对象接口
 
-```
+```js
 var test = (function () {
 
   // 在函数的作用域中下面的变量是私有的
@@ -145,14 +144,14 @@ test.fun2(); //"you had shift the element12"
 
 主要了解以上的代码格式，照搬了文章里面很多方法。
 
-
 接下来
 我需要好好学习以下相关概念
-###CommonJS
+
+### CommonJS
 `CommonJS` 所定义的每个js模块都是私有的，互不影响。用`require`加载模块
 
 example.js
-```
+```js
 var x = 5;
 var addX = function (value) {
   return value + x;
@@ -161,21 +160,22 @@ module.exports.x = x;
 module.exports.addX = addX;
 ```
 
-```
+```js
 var example = require('./example.js');
 
 console.log(example.x); // 5
 console.log(example.addX(1)); // 6
+```
 
-```
-###AMD
-(Asynchronous Module Definition)
-```
+### AMD (Asynchronous Module Definition)
+
+```js
 define(id?, dependencies?, factory);
 ```
->异步模块定义规范（AMD）制定了定义模块的规则，这样模块和模块的依赖可以被异步加载。这和浏览器的异步加载模块的环境刚好适应（浏览器同步加载模块会导致性能、可用性、调试和跨域访问等问题）
 
-```
+> 异步模块定义规范（AMD）制定了定义模块的规则，这样模块和模块的依赖可以被异步加载。这和浏览器的异步加载模块的环境刚好适应（浏览器同步加载模块会导致性能、可用性、调试和跨域访问等问题）
+
+```js
 define(['myModule', 'myOtherModule'], function(myModule, myOtherModule) {
   console.log(myModule.hello());
 });

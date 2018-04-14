@@ -1,12 +1,12 @@
-##项目有关于七牛上传图片接口(实现步骤)
+## 项目有关于七牛上传图片接口(实现步骤)
 
-1.html实现上传图片预览
+1. html实现上传图片预览
 
-2.将图片数据传给服务器接口
+2. 将图片数据传给服务器接口
 
-3.服务器接口返回key,token去请求七牛接口(以下示例)
+3. 服务器接口返回key,token去请求七牛接口(以下示例)
 
-###图片预览
+### 图片预览
 ```html
 <input type="file" id="filechooser" class="filechooser">
 ```
@@ -113,7 +113,7 @@ export default uploadImg;
 ```
 
 
-###图片上传七牛接口示例：
+### 图片上传七牛接口示例：
 
 ```JavaScript
 let requestQiniuUpload = function (key,token,i){
@@ -148,7 +148,7 @@ export default requestQiniuUpload;
 
 *file,通过input元素$('.filechooser')[i].files[0]);取到。这边有两个$('.filechooser')。
 
-###bug:
+### bug:
 
 接口报错:`failed to load resource the server responded with a status of 401 (unauthorized)`
 
