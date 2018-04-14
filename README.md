@@ -25,7 +25,7 @@ Notes about my daily reading and feelings.
 
 ## [Apr,2018](2018/Apr/)
 
-- **[webpack知识点](2018/Apr/12nd/webpack知识点.md)** (04-12)
+- **[webpack知识点](2018/Apr/webpack知识点.md)** (04-12)
 
-- **[开发一个node应用](2018/Apr/12nd/开发一个node应用.md)** (04-14)
+- **[开发一个node应用](2018/Apr/开发一个node应用.md)** (04-14)
 
