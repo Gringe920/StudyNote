@@ -204,7 +204,7 @@ exports.start = start;
 		```
 
 不同路由请求展示不同界面。
-请欣赏渣渣[demo](https://github.com/Gringe920/sundae/simple-req-res)
+请欣赏渣渣[demo](https://github.com/Gringe920/sundae/tree/master/simple-req-res)
 
 
 - 再此基础上，做个表单发送请求并返回展示
