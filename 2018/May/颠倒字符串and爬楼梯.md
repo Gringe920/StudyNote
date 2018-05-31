@@ -4,7 +4,8 @@
 
   ```js
   function reserveString(str) {
-  	return str.split('').reserve().join('') //split切割成数组，reserve进行数组反转，join拼接成字符串
+    // split切割成数组，reserve进行数组反转，join拼接成字符串
+  	return str.split('').reserve().join('') 
   }
 
   ```
