@@ -37,4 +37,12 @@ Notes about my daily reading and feelings.
 
 ## [June,2018](2018/June/)
 
-- **[vue杂七杂八](2018/May/some-vue-tips.md)** (06-26)
+- **[vue杂七杂八](2018/June/some-vue-tips.md)** (06-26)
+
+## [Oct,2018](2018/Oct/)
+
+- **[react-redux相关概念](2018/Oct/react-redux-note.md)** (10-20)
+
+## [Nov,2018](2018/Nov/)
+
+- **[ES6 基础概念](2018/Nov/ES6基础 - note.md)** (11-20)
